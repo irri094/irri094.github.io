@@ -28,10 +28,10 @@ for(var team in results){
     var penalty = 0
 
     for(var i = 0; i<results[team].length; i++){
-        if(results[team][i] !== null &&  results[team][i][0] > elapsed_time)
-            results[team][i] = null
+        if(results[team][i] !== None &&  results[team][i][0] > elapsed_time)
+            results[team][i] = None
 
-        if(results[team][i] !== null){
+        if(results[team][i] !== None){
             solve_count += 1
             penalty += results[team][i][0] + 20 * results[team][i][1]
             counts[i]++
