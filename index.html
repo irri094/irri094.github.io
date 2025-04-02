@@ -83,7 +83,7 @@
         <a href="#" onclick="showSection('home')">Home</a>
         <a href="#" onclick="showSection('education')">Education</a>
         <a href="#" onclick="showSection('experience')">Experience</a>
-        <a href="#" onclick="showSection('honours')">Honours</a>
+        <!-- <a href="#" onclick="showSection('honours')">Honours</a> -->
         <a href="#" onclick="showSection('projects')">Projects</a>
         <a href="#" onclick="showSection('research')">Research</a>
         <a href="#" onclick="showSection('contact')">Contact</a>
@@ -93,7 +93,9 @@
         <img src="static/chobi.jpeg" alt="Profile Picture">
         <h1>Kazi Md Irshad Farooqui</h1>
         <p>Software Engineer (June 2023 - Present) <br>
-            Graduated from CSE, BUET (2023)</p>
+           Graduated from CSE, BUET (2023)</p>
+        <p>I am interested in research areas such as bioinformatics, computer graphics, and theoretical computer science, but my curiosity extends beyond these fields. I am always excited to explore new technologies and tackle challenging problems.</p>
+        <p>Additionally, I have a strong background in competitive programming and had the honor of competing in the <a href="https://icpc.global/worldfinals/scoreboard/2023/scoreboards/46/index.html">46th ICPC World Finals</a>, where my team was the Asia West Champion.</p>
     </div>
 
     <style>
@@ -166,7 +168,6 @@
                 <li>CSE313 - Operating Systems</li>
                 <li>CSE471 - Machine Learning</li>
                 <li>CSE309 - Compiler</li>
-                <li>CSE463 - Introduction to Bioinformatics</li>
                 <li>MATH245 - Statistics and Probability</li>
                 <li>MATH247 - Linear Algebra</li>
             </ul>
@@ -178,7 +179,7 @@
             <p>Year: 2015 | Result: GPA 5.00/5.00</p>
         </div>
     </div>
-
+<!-- 
     <div class="container" id="experience">
         <h2>Experience</h2>
         <p><strong>Software Engineer at PriyoSys Ltd</strong><br>
@@ -188,7 +189,31 @@
         <p><strong>Software Engineer at Enosis Solutions</strong><br>
         Jun 2023 - Feb 2024<br>
         Development and maintenance of a practice management system.</p>
+    </div> -->
+
+    <div class="container" id="experience">
+        <h2>Experience</h2>
+        
+        <p><strong>Software Engineer at PriyoSys Ltd</strong><br>
+        Feb 2024 - Present</p>
+        <ul>
+            <li>Contributed to the full-stack development and system design of <a href="https://pay.priyo.com">PriyoPay</a>, a fintech product with over 3 million USD in monthly transactions.</li>
+            <li>Engineered a BDT wallet microservice, integrating with third-party APIs and remitting 270 million BDT in the first five months.</li>
+            <li>Deployed systems on GCP with Docker, Nginx, and Certbot; set up CI/CD pipelines using Jenkins.</li>
+            <li>Designed a resource management feature, increasing user subscription revenue by 60%.</li>
+            <li>Managed the build and deployment of the Android app, increasing customer acquisition by 35%.</li>
+            <li>Built analytics features for data-driven decision making.</li>
+        </ul>
+    
+        <p><strong>Software Engineer at Enosis Solutions</strong><br>
+        Jun 2023 - Feb 2024</p>
+        <ul>
+            <li>Contributed to the development and maintenance of a US-based practice management system with 100K+ users.</li>
+            <li>Developed a microservice to convert HTML to PDF, reducing backend CPU usage by 11%.</li>
+            <li>Enhanced system reliability by resolving exceptions using Azure monitoring tools.</li>
+        </ul>
     </div>
+    
 
 
     <div class="container" id="honours">
@@ -198,22 +223,69 @@
 
     <div class="container" id="projects">
         <h2>Projects</h2>
-        <p>E commerce site</p>
-        <p>CNN for hand written digit recognition</p>
-        <p>ray tracing</p>
-        <p>assembly code generation</p>
+    
+        <h3>
+            <a href="https://github.com/irri094/cse408ebay" target="_blank">Bengal Bay</a> 
+            <span style="font-size: 0.9em;">[ Python, JavaScript, Django, MySQL, Redis ]</span>
+        </h3>
+        <p>
+            E-commerce site with features like product ordering, selling, shipping, order tracking, auctions, bidding, mail automation, caching, and real-time auction tracking.
+        </p>
+    
+        <h3>
+            <a href="https://github.com/irri094/compiler-offline" target="_blank">Assembly Code Generation</a> 
+            <span style="font-size: 0.9em;">[ Yacc, Lex ]</span>
+        </h3>
+        <p>
+            Generates 8086 assembly code from C code using Bison and Flex.
+        </p>
+    
+        <h3>
+            <a href="https://github.com/irri094/Ray-tracing" target="_blank">Ray Tracing</a> 
+            <span style="font-size: 0.9em;">[ C++, OpenGL ]</span>
+        </h3>
+        <p>
+            Simulated 3D space with triangles, spheres, and quadratic surfaces using Ray Tracing and Phong Lighting Model for lighting and reflection.
+        </p>
+    
+        <h3>
+            <a href="https://github.com/IAMSHARIFUL/BIIS-Database-Project" target="_blank">BIIS</a> 
+            <span style="font-size: 0.9em;">[ Python, Django, Oracle ]</span>
+        </h3>
+        <p>
+            Student information site with functionalities like course registration, dropping, and retakes for students. Teachers can set grades and publish results.
+        </p>
+    
+        <h3>
+            CNN
+            <span style="font-size: 0.9em;">[ Python, Numpy ]</span>
+        </h3>
+        <p>
+            Implementation of CNN from scratch in Python using NumPy on LeNet architecture for training and testing on Bengali digit images, achieving 58% accuracy on test data.
+        </p>
     </div>
+    
+
 
     <div class="container" id="research">
         <h2>Research</h2>
-        <p>A comparative study of approximate nearest neighbor search algorithms in high dimensions</p>
+        <h3>A Comparative Study of Approximate Nearest Neighbor Search Algorithms in High Dimensions</h3>
+        <p>Investigated various ANNS algorithms, mainly hashing, quantization, and graph-based methods, and evaluated their performance using FAISS on real-world datasets. Analyzed trade-offs in training time, accuracy, speed, and memory usage to provide insight to select optimal NNS algorithms in applications such as information retrieval and recommender systems.</p>
+        <p><a href="https://github.com/irri094/anns-benchmark-faiss/blob/main/Thesis_book.pdf" target="_blank">Read the Paper</a></p>
     </div>
 
     <div class="container" id="contact">
         <h2>Contact</h2>
-        <p>Email: kazimdirshad AT gmail DOT com</p>
-        <p>linkedin: <a href="https://www.linkedin.com/in/kazi-md-irshad/">https://www.linkedin.com/in/kazi-md-irshad/</a></p>
+        <p>Email: <a href="mailto:kazimdirshad@gmail.com">kazimdirshad AT gmail DOT com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kazi-md-irshad/">https://www.linkedin.com/in/kazi-md-irshad/</a></p>
+        <p>ICPC ID: <a href="https://icpc.global/ICPCID/CDC4TOIZJBQ2">https://icpc.global/ICPCID/CDC4TOIZJBQ2</a></p>
+        <p>Codeforces: <a href="https://codeforces.com/profile/irri">https://codeforces.com/profile/irri</a></p>
+        <p>GitHub: <a href="https://github.com/irri094">https://github.com/irri094</a></p>
     </div>
+    
+
+    <!-- https://icpc.global/ICPCID/CDC4TOIZJBQ2 -->
+
 </body>
 
 </html>
